@@ -9,6 +9,7 @@ on:
 jobs:
 
   build:
+    if: github.ref == 'refs/heads/dev-next'
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v3
